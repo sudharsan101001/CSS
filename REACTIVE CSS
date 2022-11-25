@@ -1,0 +1,40 @@
+body{
+    margin-top: 50px;
+}
+body::before{
+content:'XS';
+color: orangered;
+font-size: 30px;
+position: fixed;
+top: 0;
+left:0;
+font-weight: bold;
+}
+@media (min-width: 576px){
+    body::before{
+        content: "SM";
+        color: cadetblue;
+    }
+}
+@media (min-width: 768px){
+    body::before{
+        content: "MD";
+    }
+}
+@media (min-width: 992px){
+    body::before{
+        content: "LG";
+    }
+}
+@media (min-width: 1200px){
+    body::before{
+        content: "XL";
+    }
+}
+@media (min-width: 1400px){
+    body::before{
+        content: "XXL";
+    }
+}
+
+
